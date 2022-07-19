@@ -8,21 +8,68 @@
 :root {
     /*Variáveis do cartão*/
     --card-shadow: .4rem .4rem 1.8rem  #7e7e7e, -.4rem -.4rem 2rem #f8f8f8; 
-    --card-shadow: linear-gradient(to-bottom, #adafb3 50%, #c7c7c9 80%);
+    --card-background: linear-gradient(to left, #db684b 50%, #eecb6c 80%);
 
 
     /*Variáveis do botões*/
-    --btn-shadow: inset .6rem .6rem .9rem #484541, inset -.4rem -.4rem 1.4rem #5c5c58;
-    --btn-filter: drop-shadow(.1rem .2rem .5rem #424242);
+    --btn-shadow: inset .2rem .3rem .2rem #8a8a8a, inset -.1rem -.2rem 1.1rem #888888;
+    --btn-filter: drop-shadow(.1rem .2rem .5rem #b4b4b4);
 
 
     /*clr */
     --clr-description: #edeff2;
-    --clr-btn: #868681;
+    --clr-btn: #d3d3d3;
     --clr-youtube-red: #c00;
     --clr-youtube-write: #fff;
 
     /*Variável das fontes */    
     --ff: "Roboto", sans-serif;
+
 }
 
+
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #fff;
+    font-family: var(--ff);
+}
+
+.card {
+    background: var(--card-background);
+    width: 45rem;
+    height: 33rem;
+    margin: 0 auto;
+    margin-top: 5rem;
+    border-radius: 20px;
+    /*box-shadow: var(--card-shadow);*/
+    display: flex;
+
+}
+
+.icon-card {
+    background: var(--clr-btn); 
+    width: 6rem;
+    height: 4rem;
+    margin: 2rem 3rem;
+    border-radius: 5px;
+    opacity: .9;
+    box-shadow: var(--btn-shadow);
+    display: block;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.icon-details {
+    width: 5rem;
+    border-top: 1rem solid transparent;
+    border-bottom: 0.7rem solid transparent;
+    border-left: 3rem solid #ddd;
+    margin-left: 5px;
+    filter: var(--btn-filter);
+   
+}
